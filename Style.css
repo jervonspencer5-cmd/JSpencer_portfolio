@@ -1,0 +1,184 @@
+:root {
+    --main-blue: #0077ff;
+    --white: #ffffff;
+    --gray: #f4f4f4;
+    --dark: #222222;
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--gray);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-blue);
+    padding: 1.2rem 2rem;
+    color: var(--white);
+}
+
+.logo span {
+    color: var(--white);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 1.5rem;
+}
+
+.hero {
+    background-color: var(--white);
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-content {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.bio p {
+    margin-bottom: 0.6rem;
+}
+
+/* Profile Photo */
+#profile-photo {
+    width: 180px;
+    height: 230px;
+    border-radius: 50%;
+    border: 3px solid var(--main-blue);
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--main-blue);
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #0055cc;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Section Headings */
+h2, h3 {
+    color: var(--main-blue);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background: var(--main-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (min-width: 950px) {
+    main {
+        padding: 3rem 6rem;
+    }
+    .about-content {
+        padding: 3rem;
+    }
+}
+
+/* Resume Page Layout */
+.resume-header {
+    background: var(--white);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.cv-section {
+    background: var(--white);
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 1000px;
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.cv-left, .cv-right {
+    background: var(--gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.cv-left ul, .cv-right ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.download-btn {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* For larger screens */
+@media (min-width: 950px) {
+    .cv-container {
+        flex-direction: row;
+    }
+    .cv-left, .cv-right {
+        flex: 1;
+    }
+}
